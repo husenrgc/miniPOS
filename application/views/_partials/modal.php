@@ -35,13 +35,13 @@
           <div class="col-md-6">
             <div class="form-group">
               <label>Harga Beli</label>
-              <input type="number" class="form-control" name="buyprice" value="<?php echo set_value('buyprice'); ?>">
+              <input type="number" class="form-control" name="buyprice" min="0" value="<?php echo set_value('buyprice'); ?>">
             </div>
           </div>
           <div class="col-md-6">
             <div class="form-group">
               <label>Harga Jual</label>
-              <input type="number" class="form-control" name="sellprice" value="<?php echo set_value('sellprice'); ?>">
+              <input type="number" class="form-control" name="sellprice" min="0" value="<?php echo set_value('sellprice'); ?>">
             </div>
           </div>
           <div class="col-md-12">
