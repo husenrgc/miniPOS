@@ -48,11 +48,23 @@ class Product_model extends CI_Model {
       "timecreated" => date('Y-m-d H:i:s'),
       "timemodified" => date('Y-m-d H:i:s')
     );
-     $data2 = array(
+    $data2 = array();
+    $selcat = $this->input->post('select');
+    foreach($selcat AS $key => $val){
+      $data2[] = array(
+        'id'         =>'',
+        'productid'  => $id,
+        'categoryid' => $_POST['select'][$key]
+      );
+    }
+    /*
+    $data2 = array(
       "id"=>"",
       "productid"=> $id,
-      "categoryid"=> $this->input->post('select'));
-    $this->db->insert('product_detail',$data2);
+      "categoryid"=> $this->input->post('select')
+    );
+    */
+    $this->db->insert_batch('product_detail',$data2);
     $this->db->insert('product', $data); // Untuk mengeksekusi perintah insert data
   }
   

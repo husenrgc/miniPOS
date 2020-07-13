@@ -10,9 +10,8 @@
   
   <!-- Custom scripts -->
   <script src="<?php echo base_url(); ?>assets/assets/js/app-script.js"></script>
- <script src="<?php echo base_url(); ?>assets/assets/js/chosen.jquery.js"></script>
-  <script src="<?php echo base_url(); ?>assets/assets/js/chosen.proto.js"></script>
-   <script src="<?php echo base_url(); ?>assets/assets/js/chosen.jquery.min.js"></script>
+    <!--Select Plugins Js-->
+    <script src="<?php echo base_url(); ?>assets/assets/plugins/select2/js/select2.min.js"></script>
 
 <!-- sweetalrt -->
 <script src="<?php echo base_url(); ?>assets/assets/plugins/alerts-boxes/js/sweetalert.min.js"></script>
@@ -22,19 +21,12 @@
 
 
     <script>
-     $(document).ready(function() {
+    $(document).ready(function() {
       //Default data table
-       $('#default-datatable').DataTable();
-
-
-       var table = $('#example').DataTable( {
+      $('#default-datatable').DataTable();
+      var table = $('#example').DataTable( {
         lengthChange: false,
         buttons: [ 'copy', 'excel', 'pdf', 'print', 'colvis' ]
-      } );
- 
-     table.buttons().container()
-        .appendTo( '#example_wrapper .col-md-6:eq(0)' );
-      
-      } );
-
+      });
+    });
     </script>
