@@ -55,12 +55,8 @@
                         <center> <a style='width:100px;' class='btn btn-outline-danger hapus_button' href='#' data-toggle='modal' data-target='#hapusprod' data-id_hapus='".$data->id."'><i class='fa fa-trash'> Hapus</i></a></center><br>
                         <center><a style='width:100px;' class='btn btn-outline-success ' href='".site_url("pages/product/detail/".$data->id)."' ><i class='fa fa-desktop'> Detail</i></a></center>
                             </td>
-                           
-                          
                             </tr>";
                           }
-                        }else{ // Jika data siswa kosong
-                          echo "<tr><td align='center' colspan='5'>Data Tidak Ada</td><td style='display:none'></td><td style='display:none'></td><td style='display:none'></td><td style='display:none'></td></tr>";
                         }
                       ?>
                     </tbody>
