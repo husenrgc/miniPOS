@@ -3,7 +3,7 @@
 <div id="sidebar-wrapper" data-simplebar="" data-simplebar-auto-hide="true">
   <div class="brand-logo">
     <a href="index.html">
-      <img src="<?php echo base_url(); ?>assets/assets/images/logo-icon.png" class="logo-icon" alt="logo icon">
+      <img src="<?php echo base_url(); ?>assets/images/logo-icon.png" class="logo-icon" alt="logo icon">
       <h5 class="logo-text">miniPOS</h5>
     </a>
   </div>

@@ -353,8 +353,12 @@
 	color: #999
 }
 
-.select2-container--default .select2-results__option[aria-selected=true] {
+.select2-container--default .select2-results__option[aria-selected=false] {
 	background-color: #3a3b3c
+}
+
+.select2-container--default .select2-results__option[aria-selected=true] {
+	background-color: #242526
 }
 
 .select2-container--default .select2-results__option .select2-results__option {

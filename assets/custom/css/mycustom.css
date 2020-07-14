@@ -1,0 +1,18 @@
+table thead tr th {
+	text-align:center;
+}
+.label-view {
+	color: #808080;
+}
+.view_gambar {
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+#gambar_produk {
+	max-height: 100%;
+}
+.vertical-devider-right {
+	border-right: 1px solid #808080
+}

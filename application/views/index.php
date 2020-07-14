@@ -867,30 +867,30 @@
   </div><!--End wrapper-->
 
   <!-- Bootstrap core JavaScript-->
-  <script src="<?php echo base_url(); ?>assets/assets/js/jquery.min.js"></script>
-  <script src="<?php echo base_url(); ?>assets/assets/js/popper.min.js"></script>
-  <script src="<?php echo base_url(); ?>assets/assets/js/bootstrap.min.js"></script>
+  <script src="<?php echo base_url(); ?>assets/js/jquery.min.js"></script>
+  <script src="<?php echo base_url(); ?>assets/js/popper.min.js"></script>
+  <script src="<?php echo base_url(); ?>assets/js/bootstrap.min.js"></script>
 	
  <!-- simplebar js -->
-  <script src="<?php echo base_url(); ?>assets/assets/plugins/simplebar/js/simplebar.js"></script>
+  <script src="<?php echo base_url(); ?>assets/plugins/simplebar/js/simplebar.js"></script>
   <!-- sidebar-menu js -->
-  <script src="<?php echo base_url(); ?>assets/assets/js/sidebar-menu.js"></script>
+  <script src="<?php echo base_url(); ?>assets/js/sidebar-menu.js"></script>
   <!-- loader scripts -->
-  <script src="<?php echo base_url(); ?>assets/assets/js/jquery.loading-indicator.js"></script>
+  <script src="<?php echo base_url(); ?>assets/js/jquery.loading-indicator.js"></script>
   <!-- Custom scripts -->
-  <script src="<?php echo base_url(); ?>assets/assets/js/app-script.js"></script>
+  <script src="<?php echo base_url(); ?>assets/js/app-script.js"></script>
   <!-- Chart js -->
   
-  <script src="<?php echo base_url(); ?>assets/assets/plugins/Chart.js/Chart.min.js"></script>
+  <script src="<?php echo base_url(); ?>assets/plugins/Chart.js/Chart.min.js"></script>
   <!-- Vector map JavaScript -->
-  <script src="<?php echo base_url(); ?>assets/assets/plugins/vectormap/jquery-jvectormap-2.0.2.min.js"></script>
-  <script src="<?php echo base_url(); ?>assets/assets/plugins/vectormap/jquery-jvectormap-world-mill-en.js"></script>
+  <script src="<?php echo base_url(); ?>assets/plugins/vectormap/jquery-jvectormap-2.0.2.min.js"></script>
+  <script src="<?php echo base_url(); ?>assets/plugins/vectormap/jquery-jvectormap-world-mill-en.js"></script>
   <!-- Easy Pie Chart JS -->
-  <script src="<?php echo base_url(); ?>assets/assets/plugins/jquery.easy-pie-chart/jquery.easypiechart.min.js"></script>
+  <script src="<?php echo base_url(); ?>assets/plugins/jquery.easy-pie-chart/jquery.easypiechart.min.js"></script>
   <!-- Sparkline JS -->
-  <script src="<?php echo base_url(); ?>assets/assets/plugins/sparkline-charts/jquery.sparkline.min.js"></script>
-  <script src="<?php echo base_url(); ?>assets/assets/plugins/jquery-knob/excanvas.js"></script>
-  <script src="<?php echo base_url(); ?>assets/assets/plugins/jquery-knob/jquery.knob.js"></script>
+  <script src="<?php echo base_url(); ?>assets/plugins/sparkline-charts/jquery.sparkline.min.js"></script>
+  <script src="<?php echo base_url(); ?>assets/plugins/jquery-knob/excanvas.js"></script>
+  <script src="<?php echo base_url(); ?>assets/plugins/jquery-knob/jquery.knob.js"></script>
     
     <script>
         $(function() {
@@ -898,7 +898,7 @@
         });
     </script>
   <!-- Index js -->
-  <script src="<?php echo base_url(); ?>assets/assets/js/index.js"></script>
+  <script src="<?php echo base_url(); ?>assets/js/index.js"></script>
 
   
 </body>

@@ -468,7 +468,7 @@ $(function() {
             margin: 0,
             size: '70%',
 			//background: '#000',
-            image: '<?php echo base_url(); ?>assets/assets/images/products/clock.png',
+            image: '<?php echo base_url(); ?>assets/images/products/clock.png',
 		    imageWidth: 64,
 		    imageHeight: 64,
 			imageClipped: false

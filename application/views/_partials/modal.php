@@ -13,6 +13,7 @@
         <?php echo form_open_multipart('pages/product/tambah');?>
         <div class="row">
           <div class="col-md-12">
+            <div class="gambar"></div>
             <div class="form-group">
               <label>Nama Produk</label>
               <input type="text" class="form-control" name="name" value="<?php echo set_value('name'); ?>">

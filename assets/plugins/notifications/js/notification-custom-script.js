@@ -131,7 +131,7 @@
 		    pauseDelayOnHover: true,
             continueDelayOnInactiveTab: false,
 		    position: 'top right',
-		    img: '<?php echo base_url(); ?>assets/assets/plugins/notifications/img/1.jpg', //path to image
+		    img: '<?php echo base_url(); ?>assets/plugins/notifications/img/1.jpg', //path to image
 		    msg: 'Lorem ipsum dolor sit amet hears farmer indemnity inherent.'
 		    });
 		  }
@@ -143,7 +143,7 @@
             continueDelayOnInactiveTab: false,
             icon: 'fa fa-info-circle',
 		    position: 'top right',
-		    img: '<?php echo base_url(); ?>assets/assets/plugins/notifications/img/2.jpg', //path to image
+		    img: '<?php echo base_url(); ?>assets/plugins/notifications/img/2.jpg', //path to image
 		    msg: 'Lorem ipsum dolor sit amet hears farmer indemnity inherent.'
 		    });
 		  }
@@ -154,7 +154,7 @@
 		    icon: 'fa fa-exclamation-circle',
             continueDelayOnInactiveTab: false,
 		    position: 'top right',
-		    img: '<?php echo base_url(); ?>assets/assets/plugins/notifications/img/3.jpg', //path to image
+		    img: '<?php echo base_url(); ?>assets/plugins/notifications/img/3.jpg', //path to image
 		    msg: 'Lorem ipsum dolor sit amet hears farmer indemnity inherent.'
 		    });
 		  }		 
@@ -165,7 +165,7 @@
             continueDelayOnInactiveTab: false,
             icon: 'fa fa-times-circle',
 		    position: 'top right',
-		    img: '<?php echo base_url(); ?>assets/assets/plugins/notifications/img/4.jpg', //path to image
+		    img: '<?php echo base_url(); ?>assets/plugins/notifications/img/4.jpg', //path to image
 		    msg: 'Lorem ipsum dolor sit amet hears farmer indemnity inherent.'
 		    });
 		  }		 
@@ -176,7 +176,7 @@
             continueDelayOnInactiveTab: false,
 		    position: 'top right',
 		    icon: 'fa fa-check-circle',
-		    img: '<?php echo base_url(); ?>assets/assets/plugins/notifications/img/5.jpg', //path to image
+		    img: '<?php echo base_url(); ?>assets/plugins/notifications/img/5.jpg', //path to image
 		    msg: 'Lorem ipsum dolor sit amet hears farmer indemnity inherent.'
 		    });
 		  }		 
