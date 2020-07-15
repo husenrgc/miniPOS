@@ -71,6 +71,9 @@ class Product_model extends CI_Model {
     $this->save_detail($id,$pil);
     
     $this->db->insert('product', $data); // Untuk mengeksekusi perintah insert data
+
+    $status = ($this->db->affected_rows() > 0)? "success" : "error" ;
+    savelog('useridnya',json_encode(array("action"=>"insert","query"=>$this->db->last_query(),"status"=>$status)));
   }
 
   // Fungsi untuk melakukan ubah data siswa berdasarkan NIS siswa
@@ -94,12 +97,13 @@ class Product_model extends CI_Model {
       "sellprice" => $this->input->post('sellprice') ,
       "timemodified" => date('Y-m-d H:i:s')
     );
-
-    $this->db->where('id', $id);
-    $this->db->update('product', $data); // Untuk mengeksekusi perintah update data
-
     $this->db->delete('product_detail', array('productid' => $id));
     $this->save_detail($id,$this->input->post('select'));
+    $this->db->where('id', $id);
+    $this->db->update('product', $data); // Untuk mengeksekusi perintah update data
+    
+    $status = ($this->db->affected_rows() > 0)? "success" : "error" ;
+    savelog('useridnya',json_encode(array("action"=>"update","query"=>$this->db->last_query(),"status"=>$status)));
   }
 
   // Fungsi untuk melakukan menghapus data siswa berdasarkan NIS siswa
@@ -109,6 +113,9 @@ class Product_model extends CI_Model {
     // $this->db->delete('product'); // Untuk mengeksekusi perintah delete data
     $this->active = 0;
     $this->db->update('product', $this, array('id' => $id));
+
+    $status = ($this->db->affected_rows() > 0)? "success" : "error" ;
+    savelog('useridnya',json_encode(array("action"=>"delete","query"=>$this->db->last_query(),"status"=>$status)));
   }
 
   private function _uploadImage() {

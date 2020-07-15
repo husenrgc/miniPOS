@@ -5,6 +5,7 @@ class Category extends CI_Controller {
   public function __construct() {
     parent::__construct();
     $this->load->model('Category_model');
+    $this->load->helper('insert_log');
   }
   // Load Product ke controller ini
   public function index() {

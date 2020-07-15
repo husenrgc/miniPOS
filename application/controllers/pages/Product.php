@@ -7,6 +7,7 @@ class Product extends CI_Controller {
 
     $this->load->model('Product_model');
     $this->load->library('form_validation');
+    $this->load->helper('insert_log');
   }
   // Load Product ke controller ini
   public function index() {
