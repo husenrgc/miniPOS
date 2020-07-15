@@ -2,7 +2,7 @@
 class Product_model extends CI_Model {
   // Fungsi untuk menampilkan semua data siswa
   public function viewproduct() {
-    return $this->db->get('product')->result();
+    return $this->db->get_where('v_product', ['active' => 1])->result();
   }
 
   public function viewcategory() {
@@ -63,6 +63,7 @@ class Product_model extends CI_Model {
       "description" => $this->input->post('description') ,
       "buyprice" => $this->input->post('buyprice') ,
       "sellprice" => $this->input->post('sellprice') ,
+      "active" => 1 ,
       "timecreated" => date('Y-m-d H:i:s') ,
       "timemodified" => date('Y-m-d H:i:s')
     );
@@ -103,10 +104,11 @@ class Product_model extends CI_Model {
 
   // Fungsi untuk melakukan menghapus data siswa berdasarkan NIS siswa
   public function delete($id) {
-    $this->_deleteImage($id);
-    $this->db->where('id', $id);
-    $this->db->delete('product'); // Untuk mengeksekusi perintah delete data
-    
+    // $this->_deleteImage($id);
+    // $this->db->where('id', $id);
+    // $this->db->delete('product'); // Untuk mengeksekusi perintah delete data
+    $this->active = 0;
+    $this->db->update('product', $this, array('id' => $id));
   }
 
   private function _uploadImage() {

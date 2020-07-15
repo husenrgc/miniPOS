@@ -7,8 +7,11 @@ class Category_model extends CI_Model {
   }
   // Fungsi untuk menampilkan data siswa berdasarkan NIS nya
   public function view_by($id){
-    $this->db->where('id', $id);
-    return $this->db->get('product_category')->row();
+    return $this->db->get_where('product_category', ['id' => $id])->result();
+  }
+
+  public function checkdel($id){
+    return $this->db->get_where('product_detail', ['categoryid' => $id])->num_rows();
   }
   
   // Fungsi untuk validasi form tambah dan ubah

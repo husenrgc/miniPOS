@@ -49,7 +49,7 @@ $(document).on("click", '.edit_btn',function(e) {
     dataType: 'json',
     data : {id:id_edit},
     success: function(result){
-      //console.log(result);
+      console.log(result);
       for (var x = 0; x < result.length; x++) {
         $("#name").val(result[x].name);
         $("#barcode").val(result[x].barcode);
@@ -58,17 +58,10 @@ $(document).on("click", '.edit_btn',function(e) {
         $("#image").after('<input type="hidden" name="old_image" id="old_image" value="'+result[x].picture+'">');
         var v = result[x].categoryid;
         var w = v.split(',');
-        /*
-        $.each(v.split(","), function(i,e){
-          //$("#mycat option[value='" + e + "']").attr("selected", true);
-          $('#mycat').select2('val', e);
-        });
-        */
-        console.log(w);
         $('#mycat').val(w).change();
-        $("#description").val(result[x].description);
+        $("#description").html(result[x].description);
 
-        $("#title-viewform").html('Edit Produk Data : <b>'+result[x].name+'</b>');
+        $("#title-viewform").html('Edit Data Produk : <b>'+result[x].name+'</b>');
       }
     },
     error: function(result){
